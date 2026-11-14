@@ -1,0 +1,7 @@
+raw/
+__pycache__/
+.DS_Store
+raw_dryruns/
+logs/
+batch.log
+results/to_read.txt
