@@ -8,6 +8,28 @@ This project evaluates three kinds of locks on small AI models that run on one l
 
 ![Results chart](results/chart.png)
 
+## Who this is for
+
+- **You build or review chatbots.** It shows one way to check what a safety lock really does, using numbers instead of guesses.
+- **You are new to AI.** The glossary and the step-by-step build below are written for you.
+
+## What it means for a team
+
+- Count the good questions a lock blocks, not only the bad things it stops. Both cost you.
+- A rule written in a prompt is a request, not a lock. In my runs, asking the model to repeat its instructions got the secret out every time.
+- Keep your check and your scoring apart. Mine looked perfect until I noticed they used the same rules.
+
+## About me
+
+I'm Karthik, a Lead SDET in Bangalore. I bring quality-engineering habits to AI systems: fixed question sets, repeated runs, and reading the real answers by hand. More at [karthikbabu.in](https://karthikbabu.in).
+
+## What I would do next
+
+- Run the same setups on a larger model.
+- Add a second reader who does not know which setup produced each answer.
+- Try different settings on the outside filter.
+- Use bigger question sets, so small differences mean more.
+
 ## The short version
 
 - A lock **built into the model** almost never blocked harmless questions (2 out of 100).
